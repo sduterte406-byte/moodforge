@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MoodForge — Local AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+
+      <div class="brand">
+
+        <div class="brand-mark">M</div>
+
+        <div>
+          <div class="brand-name">MOODFORGE</div>
+          <div class="brand-subtitle">LOCAL AI CREATIVE ENGINE</div>
+        </div>
+
+      </div>
+
+      <div class="local-badge">
+        <span></span>
+        RUNNING LOCALLY
+      </div>
+
+    </header>
+
+
+    <section class="intro">
+
+      <div class="number">01 / MOODFORGE</div>
+
+      <h1>
+        Turn your mood<br>
+        into <em>momentum.</em>
+      </h1>
+
+      <p>
+        Tell MoodForge how you're feeling and what you want to accomplish.
+        Your local AI will forge a personalized next move.
+      </p>
+
+    </section>
+
+
+    <section class="forge-panel">
+
+      <div class="panel-heading">
+        <span>01 / YOUR CURRENT STATE</span>
+      </div>
+
+      <label>How are you feeling?</label>
+
+      <div class="choices mood-choices">
+
+        <button class="choice" data-type="mood" data-value="Calm">
+          <strong>01</strong>
+          <span>Calm</span>
+        </button>
+
+        <button class="choice" data-type="mood" data-value="Energized">
+          <strong>02</strong>
+          <span>Energized</span>
+        </button>
+
+        <button class="choice" data-type="mood" data-value="Overwhelmed">
+          <strong>03</strong>
+          <span>Overwhelmed</span>
+        </button>
+
+        <button class="choice" data-type="mood" data-value="Unmotivated">
+          <strong>04</strong>
+          <span>Unmotivated</span>
+        </button>
+
+      </div>
+
+
+      <div class="panel-heading second">
+        <span>02 / YOUR DIRECTION</span>
+      </div>
+
+      <label>What do you want to focus on?</label>
+
+      <div class="choices goal-choices">
+
+        <button class="choice" data-type="goal" data-value="Starting a project">
+          <strong>01</strong>
+          <span>Start something</span>
+        </button>
+
+        <button class="choice" data-type="goal" data-value="Getting productive">
+          <strong>02</strong>
+          <span>Get productive</span>
+        </button>
+
+        <button class="choice" data-type="goal" data-value="Making a decision">
+          <strong>03</strong>
+          <span>Make a decision</span>
+        </button>
+
+        <button class="choice" data-type="goal" data-value="Taking a break">
+          <strong>04</strong>
+          <span>Reset</span>
+        </button>
+
+      </div>
+
+
+      <button id="forgeButton" class="forge-button">
+
+        <span>FORGE MY NEXT MOVE</span>
+
+        <span class="forge-arrow">↗</span>
+
+      </button>
+
+    </section>
+
+
+    <section id="result" class="result hidden">
+
+      <div class="result-top">
+        <span>FORGED RESPONSE</span>
+        <span>QVAC / LOCAL</span>
+      </div>
+
+
+      <div class="result-content">
+
+        <div class="ai-status">
+
+          <div class="status-dot"></div>
+
+          <span>LOCAL MODEL OUTPUT</span>
+
+        </div>
+
+
+        <div id="resultText" class="result-text">
+          Your next move will appear here.
+        </div>
+
+
+        <button id="copyButton" class="copy-button">
+
+          <span>◎</span>
+
+          <span class="copy-label">
+            COPY RESPONSE
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <div class="result-bottom">
+
+        <span>Generated on your device</span>
+
+        <span>✦</span>
+
+        <span>No cloud AI</span>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      MOODFORGE / ON-DEVICE INTELLIGENCE
+    </footer>
+
+  </main>
+
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
